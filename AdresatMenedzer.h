@@ -14,10 +14,10 @@ class AdresatMenedzer
     int idOstatniegoAdresata;
     int idUsunietegoAdresata;
     vector <Adresat> adresaci;
+    PlikZAdresatami plikZAdresatami;
 
     Adresat podajDaneNowegoAdresata(int idZalogowanegoUzytkownika, int idOstatniegoAdresata);
     void wyswietlDaneAdresata(Adresat adresat);
-    PlikZAdresatami plikZAdresatami;
 
 public:
     int dodajAdresata(int idZalogowanegoUzytkownika, int idOstatniegoAdresata);
