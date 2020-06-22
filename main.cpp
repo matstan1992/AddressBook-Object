@@ -7,23 +7,9 @@ int main()
 {
     char wybor;
     int idZalogowanegoUzytkownika = 0;
+    int idOstatniegoAdresata = 0;
     KsiazkaAdresowa ksiazkaAdresowa ("Uzytkownicy.txt");
-    /*ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-  /*  while(true)
-    {
-    if(idZalogowanegoUzytkownika == 0)
-    {
-        idZalogowanegoUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
-    }
-    else
-    {
-        ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
-        ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-        break;
-    }
-    }
-    //ksiazkaAdresowa.rejestracjaUzytkownika();
-    //ksiazkaAdresowa.rejestracjaUzytkownika();*/
+
     while (true)
     {
         if (idZalogowanegoUzytkownika == 0)
@@ -55,23 +41,25 @@ int main()
                 // to nie bedziemy musieli jeszcze raz ustalac idOstatniegoAdresata
                 idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
 */
+            ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idZalogowanegoUzytkownika);
+            idOstatniegoAdresata = ksiazkaAdresowa.pobierzZPlikuIdOstatniegoAdresata();
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
             switch (wybor)
             {
-       /*     case '1':
-                idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+            case '1':
+                idOstatniegoAdresata = ksiazkaAdresowa.dodajAdresata(idZalogowanegoUzytkownika, idOstatniegoAdresata);
                 break;
-            case '2':
+            /*case '2':
                 wyszukajAdresatowPoImieniu(adresaci);
                 break;
             case '3':
                 wyszukajAdresatowPoNazwisku(adresaci);
-                break;
+                break;*/
             case '4':
-                wyswietlWszystkichAdresatow(adresaci);
+                ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
-            case '5':
+           /* case '5':
                 idUsunietegoAdresata = usunAdresata(adresaci);
                 idOstatniegoAdresata = podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(idUsunietegoAdresata, idOstatniegoAdresata);
                 break;
