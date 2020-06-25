@@ -54,9 +54,9 @@ KsiazkaAdresowa()
     </coordinates>
     <panel_attributes>PlikZUzytkownikami
 --
-- nazwaPlikuZUzytkownikami : const String
+- NAZWA_PLIKU_Z_UZYTKOWNIKAMI : String
 --
-PlikZUzytkownikami(string NAZWA_PLIKU_Z_UZYTKOWNIKAMI)
+PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
 + dopiszUzytkownikaDoPliku() : void
 + wczytajUzytkownikowZPliku() : vector &lt;Uzytkownik&gt;
 - czyPlikJestPusty : Bool
@@ -136,7 +136,7 @@ PlikZUzytkownikami(string NAZWA_PLIKU_Z_UZYTKOWNIKAMI)
     </coordinates>
     <panel_attributes>PlikZAdresatami
 --
-- nazwaPlikuZAdresatami : const String
+- NAZWA_PLIKU_Z_ADRESATAMI : String
 --
 - pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami) : Integer
 - pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami) : Integer

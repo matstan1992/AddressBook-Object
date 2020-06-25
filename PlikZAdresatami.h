@@ -13,11 +13,11 @@ using namespace std;
 
 class PlikZAdresatami
 {
-    const string nazwaPlikuZAdresatami = "Adresaci.txt";
+    const string NAZWA_PLIKU_Z_ADRESATAMI = "Adresaci.txt";
 
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
-    bool czyPlikJestPusty();
+    bool czyPlikJestPusty(fstream &plikTekstowy);
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
 
