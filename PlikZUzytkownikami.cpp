@@ -18,10 +18,10 @@ void PlikZUzytkownikami::dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik)
         {
             plikTekstowy << endl << liniaZDanymiUzytkownika ;
         }
+        plikTekstowy.close();
     }
     else
         cout << "Nie udalo sie otworzyc pliku " << NAZWA_PLIKU_Z_UZYTKOWNIKAMI << " i zapisac w nim danych." << endl;
-    plikTekstowy.close();
 }
 
 bool PlikZUzytkownikami::czyPlikJestPusty(fstream &plikTekstowy)
@@ -114,7 +114,7 @@ void PlikZUzytkownikami::zapiszWszystkichUzytkownikowDoPliku(vector <Uzytkownik>
 
             if (itr == itrKoniec)
             {
-               plikTekstowy << liniaZDanymiUzytkownika;
+                plikTekstowy << liniaZDanymiUzytkownika;
             }
             else
             {
@@ -122,10 +122,10 @@ void PlikZUzytkownikami::zapiszWszystkichUzytkownikowDoPliku(vector <Uzytkownik>
             }
             liniaZDanymiUzytkownika = "";
         }
+        plikTekstowy.close();
     }
     else
     {
         cout << "Nie mozna otworzyc pliku " << NAZWA_PLIKU_Z_UZYTKOWNIKAMI << endl;
     }
-    plikTekstowy.close();
 }
