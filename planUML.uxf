@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>90</x>
-      <y>207</y>
+      <x>0</x>
+      <y>216</y>
       <w>360</w>
       <h>243</h>
     </coordinates>
@@ -25,14 +25,15 @@ KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
 + wypiszWszystkichUzytkownikow() : void
 + dodajAdresata() : void
 + wyswietlWszystkichAdresatow() : void
-</panel_attributes>
++ wyszukajAdresatowPoImieniu() : void
++ wyszukajAdresatowPoNazwisku() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>837</x>
-      <y>189</y>
+      <x>747</x>
+      <y>198</y>
       <w>189</w>
       <h>90</h>
     </coordinates>
@@ -47,8 +48,8 @@ KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>801</x>
-      <y>306</y>
+      <x>711</x>
+      <y>315</y>
       <w>333</w>
       <h>162</h>
     </coordinates>
@@ -69,8 +70,8 @@ PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>801</x>
-      <y>477</y>
+      <x>711</x>
+      <y>486</y>
       <w>351</w>
       <h>135</h>
     </coordinates>
@@ -88,10 +89,10 @@ PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1161</x>
-      <y>189</y>
-      <w>234</w>
-      <h>162</h>
+      <x>1071</x>
+      <y>198</y>
+      <w>243</w>
+      <h>252</h>
     </coordinates>
     <panel_attributes>AdresatMenedzer
 --
@@ -103,14 +104,18 @@ AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
 + dodajAdresata() : void
 - podajDaneNowegoAdresata() : Adresat
 - wyswietlDaneAdresata(Adresat adresat) : void
-+ wyswietlWszystkichAdresatow() : void</panel_attributes>
++ wyswietlWszystkichAdresatow() : void
++ wyszukajAdresatowPoImieniu() : void
++ wyszukajAdresatowPoNazwisku() : void
+- wyswietlIloscWyszukanychAdresatow(int iloscAdresatow) : void
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1413</x>
-      <y>189</y>
+      <x>1323</x>
+      <y>198</y>
       <w>198</w>
       <h>117</h>
     </coordinates>
@@ -127,8 +132,8 @@ AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1413</x>
-      <y>324</y>
+      <x>1323</x>
+      <y>333</y>
       <w>396</w>
       <h>198</h>
     </coordinates>
@@ -151,8 +156,8 @@ PlikZAdresatami(string nazwaPlikuZAdresatami)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>468</x>
-      <y>207</y>
+      <x>378</x>
+      <y>216</y>
       <w>315</w>
       <h>234</h>
     </coordinates>
