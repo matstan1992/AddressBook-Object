@@ -58,11 +58,10 @@ int main()
                 break;
             case '5':
                  ksiazkaAdresowa.usunAdresata();
-                 //ksiazkaAdresowa.podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata();
                  break;
-             /*case '6':
-                 edytujAdresata(adresaci);
-                 break;*/
+            case '6':
+                 ksiazkaAdresowa.edytujAdresata();
+                 break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
                 break;
