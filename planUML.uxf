@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>234</y>
+      <y>207</y>
       <w>369</w>
       <h>306</h>
     </coordinates>
@@ -27,14 +27,15 @@ KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
 + wyswietlWszystkichAdresatow() : void
 + wyszukajAdresatowPoImieniu() : void
 + wyszukajAdresatowPoNazwisku() : void
-+ usunAdresata() : void</panel_attributes>
++ usunAdresata() : void
++ edytujAdresata() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>747</x>
-      <y>216</y>
+      <y>189</y>
       <w>189</w>
       <h>90</h>
     </coordinates>
@@ -50,7 +51,7 @@ KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
     <id>UMLClass</id>
     <coordinates>
       <x>711</x>
-      <y>333</y>
+      <y>306</y>
       <w>333</w>
       <h>162</h>
     </coordinates>
@@ -72,7 +73,7 @@ PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
     <id>UMLClass</id>
     <coordinates>
       <x>711</x>
-      <y>504</y>
+      <y>477</y>
       <w>351</w>
       <h>135</h>
     </coordinates>
@@ -92,7 +93,7 @@ PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
     <id>UMLClass</id>
     <coordinates>
       <x>1071</x>
-      <y>216</y>
+      <y>189</y>
       <w>243</w>
       <h>252</h>
     </coordinates>
@@ -111,14 +112,16 @@ AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
 + wyszukajAdresatowPoNazwisku() : void
 - wyswietlIloscWyszukanychAdresatow(int iloscAdresatow) : void
 + usunAdresata() : Integer
-- podajIdWybranegoAdresata() : Integer</panel_attributes>
+- podajIdWybranegoAdresata() : Integer
+- wybierzOpcjeZMenuEdycja() : Char
++ edytujAdresata() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>1323</x>
-      <y>216</y>
+      <y>189</y>
       <w>198</w>
       <h>117</h>
     </coordinates>
@@ -136,7 +139,7 @@ AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
     <id>UMLClass</id>
     <coordinates>
       <x>1323</x>
-      <y>351</y>
+      <y>324</y>
       <w>396</w>
       <h>279</h>
     </coordinates>
@@ -155,10 +158,10 @@ PlikZAdresatami(string nazwaPlikuZAdresatami)
 + dopiszAdresataDoPliku(Adresat adresat) : void
 + pobierzIdOstatniegoAdresata() : Integer
 + wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika) : vector &lt;Adresat&gt;
-+ usunWybranegoAdresataZPliku(int idUsuwanegoAdresata) : void
-+ pobierzZPlikuIdOstatniegoAdresata() : Integer
++ usunWybranegoAdresataZPliku(int idUsuwanegoAdresata, int ID_ZALOGOWANEGO_UZYTKOWNIKA) : void
 - usunPlik(string nazwaPlikuZRozszerzeniem) : void
 - zmienNazwePliku(string staraNazwa, string nowaNazwa) : void
++ edytujAdresataWPliku(Adresat adresat) : void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -166,7 +169,7 @@ PlikZAdresatami(string nazwaPlikuZAdresatami)
     <id>UMLClass</id>
     <coordinates>
       <x>378</x>
-      <y>234</y>
+      <y>207</y>
       <w>315</w>
       <h>234</h>
     </coordinates>
