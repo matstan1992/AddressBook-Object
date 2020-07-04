@@ -16,6 +16,7 @@ public:
     static string wczytajLinie();
     static char wczytajZnak();
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+    static int wczytajLiczbeCalkowita();
 };
 
 #endif
