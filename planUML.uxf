@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>207</y>
+      <y>81</y>
       <w>369</w>
       <h>306</h>
     </coordinates>
@@ -35,7 +35,7 @@ KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
     <id>UMLClass</id>
     <coordinates>
       <x>747</x>
-      <y>189</y>
+      <y>63</y>
       <w>189</w>
       <h>90</h>
     </coordinates>
@@ -51,18 +51,15 @@ KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
     <id>UMLClass</id>
     <coordinates>
       <x>711</x>
-      <y>306</y>
+      <y>180</y>
       <w>333</w>
       <h>162</h>
     </coordinates>
     <panel_attributes>PlikZUzytkownikami
 --
-- NAZWA_PLIKU_Z_UZYTKOWNIKAMI : String
---
 PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
 + dopiszUzytkownikaDoPliku() : void
 + wczytajUzytkownikowZPliku() : vector &lt;Uzytkownik&gt;
-- czyPlikJestPusty : Bool
 - zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami() : String
 - pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowymiKreskami) : Uzytkownik
 + zapiszWszystkichUzytkownikowDoPliku(vector &lt;Uzytkownik&gt; &amp;uzytkownicy) : void
@@ -73,7 +70,7 @@ PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
     <id>UMLClass</id>
     <coordinates>
       <x>711</x>
-      <y>477</y>
+      <y>351</y>
       <w>351</w>
       <h>135</h>
     </coordinates>
@@ -93,7 +90,7 @@ PlikZUzytkownikami(string nazwaPlikuZUzytkownikami)
     <id>UMLClass</id>
     <coordinates>
       <x>1071</x>
-      <y>189</y>
+      <y>63</y>
       <w>243</w>
       <h>252</h>
     </coordinates>
@@ -121,7 +118,7 @@ AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
     <id>UMLClass</id>
     <coordinates>
       <x>1323</x>
-      <y>189</y>
+      <y>63</y>
       <w>198</w>
       <h>117</h>
     </coordinates>
@@ -139,20 +136,18 @@ AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
     <id>UMLClass</id>
     <coordinates>
       <x>1323</x>
-      <y>324</y>
+      <y>198</y>
       <w>396</w>
       <h>279</h>
     </coordinates>
     <panel_attributes>PlikZAdresatami
 --
-- NAZWA_PLIKU_Z_ADRESATAMI : String
 - idOstatniegoAdresata : Integer
 - nazwaTymczasowegoPlikuZAdresatami : String
 --
 PlikZAdresatami(string nazwaPlikuZAdresatami)
 - pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami) : Integer
 - pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami) : Integer
-- czyPlikJestPusty() : Bool
 - zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat) : String
 - pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami) : Adresat
 + dopiszAdresataDoPliku(Adresat adresat) : void
@@ -169,7 +164,7 @@ PlikZAdresatami(string nazwaPlikuZAdresatami)
     <id>UMLClass</id>
     <coordinates>
       <x>378</x>
-      <y>207</y>
+      <y>81</y>
       <w>315</w>
       <h>234</h>
     </coordinates>
@@ -189,7 +184,24 @@ UzytkownikMenedzer(string nazwaPlikuZUzytkownikami)
 - podajDaneNowegoUzytkownika() : Uzytkownik
 - pobierzIdNowegoUzytkownika() : Integer
 - czyIstniejeLogin() : Bool
-</panel_attributes>
++ pobierzIdZalogowanegoUzytkownika() : Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>711</x>
+      <y>522</y>
+      <w>252</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>PlikTekstowy
+--
+- NAZWA_PLIKU : String
+--
+PlikTekstowy(string nazwaPliku)
++ pobierzNazwePliku() : String
++ czyPlikJestPusty() : Bool</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
