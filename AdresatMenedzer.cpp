@@ -123,7 +123,7 @@ void AdresatMenedzer::wyszukajAdresatowPoNazwisku()
                 iloscAdresatow++;
             }
         }
-         wyswietlIloscWyszukanychAdresatow(iloscAdresatow);
+        wyswietlIloscWyszukanychAdresatow(iloscAdresatow);
     }
     else
     {

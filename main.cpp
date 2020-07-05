@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "KsiazkaAdresowa.h"
 
 using namespace std;
@@ -34,12 +35,6 @@ int main()
         }
         else
         {
-            /*    if (adresaci.empty() == true)
-                    // Pobieramy idOstatniegoAdresata, po to aby zoptymalizowac program.
-                    // Dzieki temu, kiedy uztykwonik bedzie dodawal nowego adresata
-                    // to nie bedziemy musieli jeszcze raz ustalac idOstatniegoAdresata
-                    idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
-            */
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
 
             switch (wybor)
@@ -57,11 +52,11 @@ int main()
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
-                 ksiazkaAdresowa.usunAdresata();
-                 break;
+                ksiazkaAdresowa.usunAdresata();
+                break;
             case '6':
-                 ksiazkaAdresowa.edytujAdresata();
-                 break;
+                ksiazkaAdresowa.edytujAdresata();
+                break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
                 break;
